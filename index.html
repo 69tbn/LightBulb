@@ -3,7 +3,7 @@
 <head>
     <title>skippidi</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" >
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <style>
     
@@ -17,10 +17,10 @@
     var pic;
     var bcolor;
     if (sw == 0) {
-        pic = "/images/off.png"
+        pic = "images/off.png"
         bcolor="rgb(29,42,53)"
     } else {
-        pic = "/images/on.png"
+        pic = "images/on.png"
         bcolor="white"
         }
     document.getElementById('myImage').src = pic;
@@ -28,7 +28,7 @@
     }
     </script>
     
-    <img id="myImage" src="/images/off.png" width="300" height="300">
+    <img id="myImage" src="images/off.png" width="300" height="300">
     
     <p>
     <button type="button" onclick="light(1)">Light On</button>
