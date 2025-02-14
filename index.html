@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>skippidi</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <style>
+    
+    </style>
+</head>
+<body>
+<!--you can write a comment here-->
+<div style="border:none; text-align: center;" >
+<script>
+    function light(sw) {
+    var pic;
+    var bcolor;
+    if (sw == 0) {
+        pic = "/images/off.png"
+        bcolor="rgb(29,42,53)"
+    } else {
+        pic = "/images/on.png"
+        bcolor="white"
+        }
+    document.getElementById('myImage').src = pic;
+    document.body.style.backgroundColor =bcolor;
+    }
+    </script>
+    
+    <img id="myImage" src="/images/off.png" width="300" height="300">
+    
+    <p>
+    <button type="button" onclick="light(1)">Light On</button>
+    <button type="button" onclick="light(0)">Light Off</button>
+    </p>
+
+</div>
+
+</body>
+</html>
